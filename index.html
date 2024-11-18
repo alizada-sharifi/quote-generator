@@ -4,30 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quote Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
-  <body>
-    <div class="quote-container" id="quote-container">
+  <body
+    class="d-flex justify-content-center align-items-center bg-white text-center"
+  >
+    <div class="quote-container rounded-3" id="quote-container">
       <div class="quote-text">
         <i class="fa-solid fa-quote-left"></i>
         <span id="quote"></span>
       </div>
       <div class="quote-author">
         <span id="author"></span>
-        <div class="button-container">
-          <button class="twitter-button" id="twitter" title="Tweet This!">
+        <div class="button-container d-flex justify-content-between">
+          <button
+            class="twitter-button border-0 rounded-3 text-white"
+            id="twitter"
+            title="Tweet This!"
+          >
             <i class="fa-brands fa-twitter"></i>
           </button>
-          <button id="new-quote">New Quote</button>
+          <button id="new-quote" class="border-0 rounded-3 text-white">
+            New Quote
+          </button>
         </div>
       </div>
     </div>
     <!-- ======= loader section ======== -->
-    <div class="loader" id="loader" hidden></div>
+    <div class="loader rounded-circle" id="loader" hidden></div>
     <!-- ========== js section =========== -->
     <script src="quotes.js"></script>
     <script src="script.js"></script>

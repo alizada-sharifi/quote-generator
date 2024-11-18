@@ -26,8 +26,10 @@ function loading() {
   quoteContainer.hidden = true;
 }
 function complete() {
-  loader.hidden = true;
-  quoteContainer.hidden = false;
+  if (!loader.hidden) {
+    loader.hidden = true;
+    quoteContainer.hidden = false;
+  }
 }
 function twittThis() {
   const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${author.textContent}`;
